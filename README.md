@@ -1,16 +1,6 @@
 # dashboard_ui_app
 
-A new Flutter project.
+This is a complete Fitness Dashboard UI built in Flutter. This repository is for education purposes so that you can learn the concepts of how you can create Responsive Dashboards in Flutter.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="827" alt="Screenshot 2024-05-11 at 7 07 02 PM" src="https://github.com/ArslanYousaf12/dashboard-dark/assets/124046832/f86d4587-b1c4-49fc-b4d7-1084ffe07fe0">
