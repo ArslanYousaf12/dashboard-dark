@@ -1,5 +1,6 @@
 import 'package:dashboard_ui_app/src/features/activity_details/prsentation/activity_detailed_card.dart';
 import 'package:dashboard_ui_app/src/features/dashboard/presentation/header.dart';
+import 'package:dashboard_ui_app/src/features/line_chart/presentation/line_chart_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -18,7 +19,11 @@ class Dashboard extends StatelessWidget {
         SizedBox(
           height: 18,
         ),
-        Expanded(child: ActivityDetailsWidget())
+        ActivityDetailsWidget(),
+        SizedBox(
+          height: 18,
+        ),
+        LineChartCard(),
       ],
     );
   }

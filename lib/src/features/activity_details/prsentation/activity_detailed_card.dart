@@ -1,5 +1,5 @@
 import 'package:dashboard_ui_app/src/features/activity_details/data/health_details.dart';
-import 'package:dashboard_ui_app/src/features/activity_details/prsentation/custom_card.dart';
+import 'package:dashboard_ui_app/src/common_widgets/custom_card.dart';
 import 'package:flutter/material.dart';
 
 class ActivityDetailsWidget extends StatelessWidget {
