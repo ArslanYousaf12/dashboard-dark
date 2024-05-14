@@ -1,4 +1,5 @@
 import 'package:dashboard_ui_app/src/features/sumary/pie_chart/presentation/pie_chart_screen.dart';
+import 'package:dashboard_ui_app/src/features/sumary/schedule/presentation/schedule.dart';
 import 'package:dashboard_ui_app/src/features/sumary/summary_details.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +30,10 @@ class SummaryScreen extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: SummaryDetails(),
           ),
+          SizedBox(
+            height: 40,
+          ),
+          Scheduled(),
         ],
       ),
     );
