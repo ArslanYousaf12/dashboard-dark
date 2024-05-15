@@ -10,6 +10,7 @@ class SummaryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: kDefaultIconDarkColor,
       child: Column(
         children: [
           SizedBox(

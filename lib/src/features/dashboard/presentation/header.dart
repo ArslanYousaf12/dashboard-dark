@@ -8,35 +8,63 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDesktop = Responsive.isDesktop(context);
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Expanded(
-          child: TextField(
-            decoration: InputDecoration(
-                filled: true,
-                fillColor: kcardBackgroundColor,
-                enabledBorder: const OutlineInputBorder(
-                  borderSide: BorderSide(
-                    color: Colors.transparent,
+        SizedBox(
+          width: 12,
+        ),
+        if (!Responsive.isMobile(context))
+          Expanded(
+            child: TextField(
+              decoration: InputDecoration(
+                  filled: true,
+                  fillColor: kcardBackgroundColor,
+                  enabledBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                    ),
                   ),
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide(color: Theme.of(context).primaryColor),
-                ),
-                contentPadding: const EdgeInsets.symmetric(vertical: 5),
-                hintText: 'Search',
-                prefixIcon: const Icon(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide:
+                        BorderSide(color: Theme.of(context).primaryColor),
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 5),
+                  hintText: 'Search',
+                  prefixIcon: const Icon(
+                    Icons.search,
+                    color: Colors.grey,
+                    size: 21,
+                  )),
+            ),
+          ),
+        if (Responsive.isMobile(context))
+          Row(
+            children: [
+              IconButton(
+                icon: Icon(
                   Icons.search,
                   color: Colors.grey,
-                  size: 21,
-                )),
-          ),
-        ),
+                  size: 25,
+                ),
+                onPressed: () {},
+              ),
+              InkWell(
+                onTap: () => Scaffold.of(context).openEndDrawer(),
+                child: CircleAvatar(
+                  backgroundColor: Colors.transparent,
+                  child: Image.asset(
+                    'assets/images/avatar.png',
+                    width: 25,
+                  ),
+                ),
+              )
+            ],
+          )
       ],
     );
   }
